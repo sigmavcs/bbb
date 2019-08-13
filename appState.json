@@ -1,0 +1,76 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "d7402cda-31e8-4e94-a034-7225231de9dd": {
+        "id": "d7402cda-31e8-4e94-a034-7225231de9dd",
+        "parent": null,
+        "name": "bbb",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "8a69ec91-0e70-4f38-bb8b-1bc5d529fd28"
+        ],
+        "isRemovable": false,
+        "filePath": "bbb"
+      },
+      "8a69ec91-0e70-4f38-bb8b-1bc5d529fd28": {
+        "id": "8a69ec91-0e70-4f38-bb8b-1bc5d529fd28",
+        "parent": "d7402cda-31e8-4e94-a034-7225231de9dd",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "bbb/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "d7402cda-31e8-4e94-a034-7225231de9dd",
+    "openFiles": [
+      "8a69ec91-0e70-4f38-bb8b-1bc5d529fd28"
+    ],
+    "currentFileId": "8a69ec91-0e70-4f38-bb8b-1bc5d529fd28",
+    "resources": {},
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "bbb",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {}
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "bbb",
+      "url": "https://github.com/sigmavcs/bbb"
+    }
+  }
+}
