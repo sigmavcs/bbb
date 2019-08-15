@@ -1,6 +1,37 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
+      "65356ff7-bcaa-4d9d-aedb-17e4ba2989ec": {
+        "id": "65356ff7-bcaa-4d9d-aedb-17e4ba2989ec",
+        "parent": null,
+        "name": "aaa",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "49ff4231-b6af-4b18-b0fc-10064d7ea79a"
+        ],
+        "isRemovable": false,
+        "filePath": "aaa"
+      },
+      "49ff4231-b6af-4b18-b0fc-10064d7ea79a": {
+        "id": "49ff4231-b6af-4b18-b0fc-10064d7ea79a",
+        "parent": "65356ff7-bcaa-4d9d-aedb-17e4ba2989ec",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "aaa/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed!\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
       "d7402cda-31e8-4e94-a034-7225231de9dd": {
         "id": "d7402cda-31e8-4e94-a034-7225231de9dd",
         "parent": null,
@@ -10,7 +41,7 @@
         "children": [
           "8a69ec91-0e70-4f38-bb8b-1bc5d529fd28"
         ],
-        "isRemovable": false,
+        "isRemovable": true,
         "filePath": "bbb"
       },
       "8a69ec91-0e70-4f38-bb8b-1bc5d529fd28": {
@@ -34,11 +65,11 @@
       }
     },
     "deletedFiles": [],
-    "rootNode": "d7402cda-31e8-4e94-a034-7225231de9dd",
+    "rootNode": "65356ff7-bcaa-4d9d-aedb-17e4ba2989ec",
     "openFiles": [
-      "8a69ec91-0e70-4f38-bb8b-1bc5d529fd28"
+      "49ff4231-b6af-4b18-b0fc-10064d7ea79a"
     ],
-    "currentFileId": "8a69ec91-0e70-4f38-bb8b-1bc5d529fd28",
+    "currentFileId": "49ff4231-b6af-4b18-b0fc-10064d7ea79a",
     "resources": {},
     "customTemplate": {
       "dialect": null,
@@ -59,17 +90,18 @@
     }
   },
   "PROJECT_META": {
-    "projectName": "bbb",
+    "projectName": "aaa",
     "projectDescription": "",
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "platformRegions": {}
+    "platformRegions": {},
+    "lastSave": null
   },
   "VCS_STATE": {
     "provider": "GitHub",
     "repo": {
-      "name": "bbb",
+      "name": "aaa",
       "url": "https://github.com/sigmavcs/bbb"
     }
   }
